@@ -1,0 +1,76 @@
+body {
+  background-color: beige;
+  
+}
+
+li a:hover:not(.active) {
+background-color: #b50027;
+color: white;
+font-size: 20px;
+font-style: Sans-serif;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+img{
+height:100%;
+width:100%;
+}
+
+.left{
+  grid-area: left ;
+  background-color:#dfdf00;
+}
+
+.header{
+  grid-area: header;
+  background-color: #b50027;
+  color:white;
+  text-shadow: 2px 2px black;
+  height: 100%;
+  width: 100%;
+  row-gap: 50%;
+}
+.menu{
+  grid-area: menu;
+  color: forestgreen;
+  background-color:beige;
+  height: 100%;
+  width: 100%;
+}
+.main{
+  grid-area: main;
+  background-color:white;
+  height: 100%;
+  width: 100%;
+}
+.footer{
+  grid-area: footer;
+  background-color:white;
+  text-align: center;
+  font-family: Serif;
+  height: 100%;
+}
+/* inspired by https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_layout_named */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'left left header header'
+    'menu main main main'
+    'footer footer footer footer';
+  gap:2%;
+  background-color:#067034;
+  padding: 15%;
+}
+
+/* inspired from https://www.w3schools.com/csSref/sel_hover.asp */
+p a:hover:not(.active) {
+background-color: beige;
+color: #0000ff;
+font-size: 22px;
+font-style: serif;
+}
